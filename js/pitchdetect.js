@@ -102,7 +102,7 @@ function getUserMedia(dictionary, callback) {
         	navigator.getUserMedia ||
         	navigator.webkitGetUserMedia ||
         	navigator.mozGetUserMedia;
-        navigator.getUserMedia(dictionary, callback, error);
+        navigator.webkitGetUserMedia(dictionary, callback, error);
     } catch (e) {
         alert('getUserMedia threw exception :' + e);
     }
